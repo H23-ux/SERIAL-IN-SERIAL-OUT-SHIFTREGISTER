@@ -27,16 +27,58 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 /* write all the steps invloved */
 
+ 1.Open the quartus prime software
+ 
+ 2.Mention th code in new file and compile, select tools- Netlist viewers-RTL viewver.
+ 
+ 3.Open new file and select Universal  program VWF for waveform.
+
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:
+Developed by:Harsheni.S
+
+RegisterNumber:24001722
 
 */
 
+module EXP10(clk, sin, q);
+
+input clk;
+
+input sin;
+
+output [3:0] q;
+
+reg [3:0] q;
+
+always @(posedge clk)
+
+begin
+
+q[0] <= sin;
+
+q[1] <= q[0];
+
+q[2] <= q[1];
+
+q[3] <= q[2];
+
+end
+
+endmodule
+
 **RTL LOGIC FOR SISO Shift Register**
 
-**TIMING DIGRAMS FOR SISO Shift Register**
+![image](https://github.com/user-attachments/assets/f7fe8ac8-c9db-4ce0-8cbc-22b15311dd35)
 
-**RESULTS**
+
+**TIMING DIAGRAM FOR SISO Shift Register**
+
+![image](https://github.com/user-attachments/assets/ae2186a1-5918-4d53-9fd1-edd6acb85608)
+
+
+**RESULT**
+
+Hence the implemention  SISO Shift Register using verilog and validating their functionality using their functional tables are done.
