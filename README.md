@@ -33,6 +33,11 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
  
  3.Open new file and select Universal  program VWF for waveform.
 
+**Truth Table**
+
+![image](https://github.com/user-attachments/assets/82894fc8-a870-42d8-bfce-b320dfac4e1e)
+
+
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
